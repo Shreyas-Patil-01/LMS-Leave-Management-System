@@ -1,0 +1,113 @@
+
+
+Employee
+-unique - guid
+-staff details - FirstName,MiddleName,LastName personal information
+-Password
+-EmailId	
+-category -staff, priniple,hod,admin
+-flag - isOnLeave 
+-IsDeleted
+-DepartmentId
+
+Department	
+-DId
+-DepartmentName
+
+LeaveHistory
+-uniqueId -guid
+type of leave
+NoOfDays
+-From
+-To
+-NoOfClasses
+-EmployeeId
+-Remarks
+-Approved 0-not approved, 1-hod Approved, 2-Principal
+
+Classes
+-Sem  -nvarchar
+-Category - nvarcharlab/class 
+-ClassRoom - nvarchar A/B/C
+-EmployeeId GUid
+
+blockDate
+-Id -guid
+-DateBlocked dType - datetime
+
+
+Notification
+-Remarks nvarchar (ex - your leave has approved)
+-IsRead type bit- 0-unread,1 - read
+
+
+
+--------------
+old Employee table
+--Details
+--Password
+
+
+--------------------------
+Admin
+-Menu
+ 1.Home/Dashboard - list
+ 2.Employee
+-List (Active, Delete)
+-Add Employee (staff, Hod,Prinicple)  
+3. Block Date
+4. Reset Password - Lsit (Reset Password button)
+5.change Password(corrr/admin)
+logout - Remove this
+
+
+Employee
+-unique - Datatype guid
+-staff details - FirstName -nvarchar ,MiddleName nvarchar ,LastName nvarchar  (personal information)
+-Password - nvarchar  hash5
+-EmailId - nvarchar 	
+-category varchar - staff, priniple,hod,admin
+-isOnLeave  bool 
+-IsDeleted isOnLeave 
+-DepartmentId (FK)
+
+
+
+
+
+Epic/story - BA epic 
+ - User story customer login buy - 10 (2 buffer)
+- Task (form creation login) -3 (jira ,azure Devops  )
+-db - 3 
+-coding - 5
+ -wbs (create firsttext box last Name -)30,minuts
+
+-enter FirstName  - pass 
+-mobile number - only digit (1234)
+
+techinical doc
+function doc
+User testing
+---------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
