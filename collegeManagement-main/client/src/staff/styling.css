@@ -1,0 +1,39 @@
+.logo {
+  height: 115px;
+  width: 1184px;
+}
+
+.notification {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.notification:hover {
+  background-color: #1565c0;
+}
+
+.home {
+  height: 40px;
+  width: 40px;
+  margin: 14px;
+}
+.home:hover {
+  background-color: #1565c0;
+}
+
+.kle {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.dashboard-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.profileImage{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
