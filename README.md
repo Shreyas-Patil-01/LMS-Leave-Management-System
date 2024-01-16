@@ -1,4 +1,4 @@
-client-fronted folder.
-backend-backend folder.
-client- npm start to run
-backend- node app.js
+# client-fronted folder.
+-npm start ,to run
+# backend-backend folder.
+- node app.js , to run
