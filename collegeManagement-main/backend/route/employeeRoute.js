@@ -12,3 +12,6 @@ const {getEmployeeById} = require("../controller/employeeController");
 router.route("/employee/:id").get(createEmployee)
 
 module.exports = router;
+//Creating Authentication.
+//router.route('/').post(registerEmployee)
+//router.route('/login').post(authEmployee)

@@ -1,5 +1,5 @@
 const Employee = require('../model/employee');
-
+const asyncHandler = require("express-async-handler")
 
 exports.createEmployee = async (req, res) => {
   try {
@@ -42,3 +42,4 @@ exports.getEmployeeById = async(req,res)=>{
     res.status(500).send('Server error');
   }
 }
+
