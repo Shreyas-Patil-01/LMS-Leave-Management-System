@@ -32,7 +32,7 @@ exports.getHodById = async(req,res)=>{
     const data = await Hod.findById(id);
     res.status(200).json({
       success:true,
-      datareading,
+      data,
     })
   }
   catch(err){

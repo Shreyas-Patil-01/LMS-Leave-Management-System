@@ -6,10 +6,11 @@ router.route("/employee").post(createEmployee)
 
 
 const {getEmployee} = require("../controller/employeeController");
-router.route("/employee").get(createEmployee)
+router.route("/employee").get(getEmployee)
 
 const {getEmployeeById} = require("../controller/employeeController");
-router.route("/employee/:id").get(createEmployee)
+const employee = require("../model/employee");
+router.route("/employee/:guid").get(getEmployeeById)
 
 module.exports = router;
 //Creating Authentication.

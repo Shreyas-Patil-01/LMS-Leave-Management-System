@@ -7,7 +7,7 @@ router.route("/hod").post(createHod)
 module.exports = router;
 
 const {getHod} = require("../controller/hodController");
-router.route("/hod").get(createHod)
+router.route("/hod").get(getHod)
 
 const {getHodById} = require("../controller/hodController");
-router.route("/hod/:id").get(createHod)
+router.route("/hod/:guid").get(getHodById)

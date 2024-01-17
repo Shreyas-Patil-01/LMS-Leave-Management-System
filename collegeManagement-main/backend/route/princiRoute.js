@@ -7,7 +7,7 @@ router.route("/princi").post(createPrinci)
 module.exports = router;
 
 const {getPrinci} = require("../controller/princiController");
-router.route("/princi").get(createPrinci)
+router.route("/princi").get(getPrinci)
 
 const {getPrinciById} = require("../controller/princiController");
-router.route("/princi/:id").get(createPrinci)
+router.route("/princi/:guid").get(getPrinciById)

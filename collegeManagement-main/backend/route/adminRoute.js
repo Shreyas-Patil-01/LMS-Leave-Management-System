@@ -7,7 +7,7 @@ router.route("/admin").post(createAdmin)
 module.exports = router;
 
 const {getAdmin} = require("../controller/adminController");
-router.route("/admin").get(createAdmin)
+router.route("/admin").get(getAdmin)
 
 const {getAdminById} = require("../controller/adminController");
-router.route("/admin/:id").get(createAdmin)
+router.route("/admin/:guid").get(getAdminById)
