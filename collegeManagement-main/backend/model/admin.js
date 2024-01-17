@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const adminSchema = new Schema({
   guid: { type: String, unique: true },
-  password: { type: String }
+  password: { type: String,required:true }
 });
 
 module.exports = mongoose.model('Admin', adminSchema);

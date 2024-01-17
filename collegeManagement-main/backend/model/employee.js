@@ -2,18 +2,18 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const employeeSchema = new Schema({
-  guid: { type: String, unique: true },
+  guid: { type:String },
+  password: { type: String },
   staffDetails: {
     firstName: { type: String },
-    middleName: { type: String },
+    middleName: { type: String},
     lastName: { type: String },
   },
-  password: { type: String },
+  department: { type: String },
+  staffType:{type : String},
+  designation :{type :String},
   emailId: { type: String },
-  category: { type: String, enum: ['staff', 'principal', 'hod', 'admin'] },
-  isOnLeave: { type: Boolean, default: false },
-  isDeleted: { type: Boolean, default: false },
-  departmentId: { type: String },
+  mobile:{type:Number}
 });
 
 module.exports = mongoose.model('Employee', employeeSchema);

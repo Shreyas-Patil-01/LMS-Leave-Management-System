@@ -1,0 +1,45 @@
+1. Employee==Staff
+        staffid
+        password
+        name(first middle last)
+        dept
+        designation
+        email
+        mobilenumber
+    
+    =>Features:
+    1.Apply leave
+    2.Class Adjustment status
+    3.Leave status
+    4.Leave count
+    5.Change password
+
+2.Admin
+     password
+
+  =>Features:
+  1. Add staff
+  2.Leave count (based on each search)
+  3.Block date(with description)
+  4.Reset password(HOD/Staff/Princi)
+  5.Change password
+
+3.HOD
+    designation
+    password
+    dept
+
+  =>Features:
+  1.Leave approval
+  2.Change password
+  3.Leave information.
+
+4. Principal
+     password
+
+   =>Features:
+   1.Leave approval
+   2.Change password
+   3.Leave Information.
+
+
